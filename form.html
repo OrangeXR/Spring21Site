@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+	<style>
+		.questionnaire {
+			display:grid;
+			grid-template-columns: 1fr,1fr; 
+			grid-auto-rows:minmas(auto, auto);
+	 		grid-gap:1px;
+			justify-items:stretch;
+			aligh-items:stretch;
+			text-align:center;
+			background-color:lightblue;
+		}
+		.formtitle {
+			grid-auto-columns: 1/3;
+			font-family: 'Great Vibes', cursive;
+			font-size: 6em;
+		}
+		.nav {
+			border:2px dotted;
+			width:100%;
+			text-align: center;
+		}
+
+		.nav ul {
+	    list-style-type: none;
+	    margin: 0;
+		padding: 0;
+	   }
+
+		.nav li {
+	   		 display: inline;
+				padding: 2px;
+	   }
+		.name {
+			font-family: 'Pacifico', cursive;
+		}
+		.q1 {
+			grid-column:1/2;
+			font-family: 'Pacifico', cursive;
+		}
+		.q2 {
+			grid-column:2/3;
+			font-family: 'Pacifico', cursive;
+		}
+		.q3 {
+			font-family: 'Pacifico', cursive;
+		}
+		.q4 {
+			font-family: 'Pacifico', cursive;
+		}
+		.feet {
+			font-family: 'Pacifico', cursive;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="questionnaire">
+		<form action="">
+			<div class="formtitle">
+				About You<br>
+			</div>
+			<div class="nav">
+			<nav>
+			   <ul>
+				<li><a href="index.html" title="Assignments Home">Home</a></li>
+				<li><a href="html1.html" title="Html 1">Assignment 1</a></li>
+				<li><a href="html2.html" title="Html 2">Assignment 2</a></li>
+				<li><a href="html3.html" title="Html 3">Assignment 3</a></li>
+				<li><a href="cssgrid.html" title="CSS Grid">Assignment 4</a></li>
+			   </ul>
+			</nav>
+		</div>
+			<div class="name">
+
+				<h3>
+				<label for="first">First Name:</label>
+				<input type="text" id="first">     
+				<label for="last">Last Name:</label>
+				<input type="text" id="last">
+				</h3>
+			</div>
+
+			<div class="q1">
+				<h3><label for="animals">Do you like animals?</label></h3>
+				<input type="radio" name="animals" value="yes">yes
+				<input type="radio" name="animals" value="no">no
+			</div>
+			<div class="q2">
+		  		<h3><label for="pets">Do you have pets?</label></h3>
+				<input type="checkbox" name="pets" value="dog">dog
+				<input type="checkbox" name="pets" value="cat">cat
+				<input type="checkbox" name="pets" value="other">other
+				<input type="checkbox" name="pets" value="nopet">none
+			</div>
+			<div class="q3">
+				<h3><label for="adopt">Ever thought about adopting a pet?</label></h3>
+				<input type="radio" name="adopt" value="yes">yes
+				<input type="radio" name="adopt" value="no">no
+			</div>
+			<div class="q4">
+				<h3><label for="hours">Do you need volunteer hours for an organization you are in?</label></h3>
+				<input type="radio" name="hours" value="yes">yes
+				<input type="radio" name="hours" value="no">no
+			</div>
+			<div class="feet">
+				<button type="submit">Submit</button>
+			</div>
+			<div class="video">
+	    		<iframe width="560" height="315" src="https://www.youtube.com/embed/XIy6SW-nczA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+	</form>
+</div>
+
+	
+	
+	</body>
+</html>
